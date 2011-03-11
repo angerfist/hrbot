@@ -55,6 +55,7 @@ def doPost(api):
     try:
         user = random.choice(list(set(api.GetFriends() + api.GetFollowers()))).screen_name
     except:
+        traceback.print_exc(file=sys.stdout)
         user = "TEST"
     message = ('@'+user+' '+quote.decode('utf-8', 'ignore'))[:140]
     if not e['test'] and not e['offline']:
