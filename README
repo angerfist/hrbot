@@ -1,0 +1,12 @@
+Usage:
+./bot.py [-t] [-m min_interval] [-M max_interval] [-f] [-o]
+
+Options:
+-t Connection test
+-m Minimum status update interval
+-M Maximum status update interval
+-o Offline mode
+-f Force status updates at night
+
+Warning:
+You can use offline mode only
